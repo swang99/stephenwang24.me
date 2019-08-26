@@ -322,25 +322,6 @@ header {
     text-align: right;
 }
 
-.contact-hero-text-box  {
-    color: #fff;
-    font-weight: 300;
-    font-size: 235%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.contact-hero-text-box:after {
-    display: block;
-    height: 2px;
-    background-color: #1dd1a1;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
 
 /* Main navi */
 .main-nav {
@@ -948,6 +929,26 @@ cite img {
     color: #fff;
 }
 
+.form-box  {
+    color: #fff;
+    font-weight: 300;
+    font-size: 235%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.form-box:after {
+    display: block;
+    height: 2px;
+    background-color: #1dd1a1;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 input[type=text],
 input[type=email],
 select,
@@ -957,7 +958,6 @@ textarea {
     padding 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
-    text-indent: 5px;
     color: #555;
 }
 
@@ -966,6 +966,17 @@ textarea {
 }
 
 *: focus {outline: none}
+
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.success {background-color: rgba(29, 209, 161, 0.8);}
+.error {background-color: rgba(217, 89, 78, 0.8);}
 
 /* ----------------------------- */
 /* FOOTER */
