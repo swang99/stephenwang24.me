@@ -218,7 +218,7 @@ header {
 .piano-bg {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Piano-close-view.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/piano-close-view.jpg);
     background-size: cover;
     background-position: right 0;
     background-attachment: scroll;
@@ -266,7 +266,7 @@ header {
 .comm-bg {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/CommServ/green-01.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/CommServ/seniorRecital02.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -951,14 +951,13 @@ cite img {
 
 input[type=text],
 input[type=email],
-select,
 textarea {
     width: 100%;
     line-height: 150%;
-    padding 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
     color: #555;
+    padding: 0 7px;
 }
 
 textarea {
@@ -966,17 +965,6 @@ textarea {
 }
 
 *: focus {outline: none}
-
-.form-messages {
-    width: 70%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 3px;
-    margin-bottom: 30px;
-}
-
-.success {background-color: rgba(29, 209, 161, 0.8);}
-.error {background-color: rgba(217, 89, 78, 0.8);}
 
 /* ----------------------------- */
 /* FOOTER */
