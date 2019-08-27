@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="../css/resources/animate.css" type="text/css"> 
         <link rel="stylesheet" href="../css/resources/style.css" type="text/css"> 
         <link rel="stylesheet" href="../css/resources/queries.css" type="text/css"> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" type="text/css"> <!font>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
         <title>Stephen Wang</title>
         
         
@@ -41,23 +43,23 @@
         
      <section class="section-mic-purpose js--section-purpose" id="purpose">
             <div class="row">
-                <h2>Project Purpose</h2>
+                <h4>Project Purpose</h4>
                 <p class="long-copy">
                 There are many affordable microphones in the market today, and they are of decent quality for less critical recording tasks. But when it comes to recording classical music, a higher quality microphone is necessary to capture subtle and elegant qualities that would be lost otherwise. The less expensive microphones such as the Rode NT5 ($400/pair) are often harsh in the high treble and boomy in the low end. The more expensive ones like the Neumann KM184 ($1500/pair) and Schoeps CMC6 MK41 ($3000/pair) are of higher quality but very expensive.
                 </p> <br>
                 <p class="long-copy">
-                One microphone that I have been longing for is the Neumann KM84, one of the first but often regarded as one of the best small diaphragm condenser microphones ever made.  It has been discontinued and the used ones sold on Ebay are often for over $2000 a pair. Fortunately, Neumann has made the circuit of the KM84 open to the public, and by shopping around on the internet, it is possible to make a replica of the KM84 for a very affordable price. No longer under the constraints of profit-driven manufacturers, I had the freedom to pick the highest quality parts while keeping the total cost under $300. I was motivated to challenge myself, and I ended up making a remarkably successful microphone that recorded a CD showcasing my most polished piano pieces.
+                One microphone that I have been longing for is the Neumann KM84, one of the first but often regarded as one of the best small diaphragm condenser microphones ever made.  It has been discontinued and the used ones sold on eBay are often for over $2000 a pair. Fortunately, Neumann has made the circuit of the KM84 open to the public, and by shopping around on the internet, it is possible to make a replica of the KM84 for a very affordable price. No longer under the constraints of profit-driven manufacturers, I had the freedom to pick the highest quality parts while keeping the total cost under $300. I was motivated to challenge myself, and I ended up making a remarkably successful microphone that recorded a CD showcasing my most polished piano pieces.
                 </p> <br>
                 <p class="long-copy">
-                I want to make transparent this process of how I made this custom microphone. After reading this page, I’m sure that anyone will have the insights to create their own high-quality microphone on a budget.
+                I want to make transparent this process of how I made this custom microphone. After reading this page, I’m sure that anyone will have the insights to create a high-quality microphone on a budget.
                 </p> 
             </div>
         </section>
         <section class="section-mic-materials" id="materials">
             <div class="row">
-                <h2>1. Materials</h2>
+                <h4>1. Materials</h4>
                 <p class="long-copy">
-                The internet DIY community commonly uses group buy to lower the cost of parts because it is often not economical to order any custom parts in small quantities. I was able to join a group of 100 people to order a customized small circuit board for this build, as well as mic capsule and its body parts. The total cost comes to about $220 for two mics. Separately I paid $50 for two output transformers. The electrical components were purchased from Mouser.com, which came to about $20 total. So the final cost for all the materials came to less than $300 not including shipping. 
+                The internet DIY community commonly uses group buying to lower the cost of parts because it is often not economical to order any custom parts in small quantities. I was able to join a group of 100 people to order a customized small circuit board for this build, as well as mic capsule and its body parts. The total cost comes to about $220 for two mics. Separately I paid $50 for two output transformers. The electrical components were purchased from Mouser.com, which came to about $20 total. So the final cost for all the materials came to less than $300, not including shipping. 
                 </p> <br>
             </div>
             <div class="row">
@@ -79,9 +81,9 @@
         </section>
         <section class="section-mic-build" id="build">
             <div class="row">
-                <h2>2. Building the Mic</h2>
+                <h4>2. Building the Mic</h4>
                 <p class="long-copy">
-                The first thing to do is to solder the electrical components onto the circuit board. It is a good practice to clearly mark all components to avoid mistakes which often are very time consuming to correct. I used a sheet of paper to sort and mark each component before I started soldering:
+                The first thing to do is to solder the electrical components onto the circuit board. It is a good practice to mark all components to avoid mistakes which are often time-consuming to correct. I used a sheet of paper to sort and mark each component before I started soldering:
                 </p> <br>
             </div>
              <div class="row">
@@ -198,9 +200,9 @@
         </section>
         <section class="section-mic-calib" id="calibration">
             <div class="row">
-                <h2>3. Calibration</h2>
+                <h4>3. Calibration</h4>
                 <p class="long-copy">
-               The FET transistor in the circuit provides the main amplification for the input signal. A FET transistor needs a proper DC bias voltage to operate at its designed voltage range without clipping the signal. A trimpot (variable resistor) is used to  optimize the load by sending a 1KHz signal to the gate of the transistor and watch the output signal from the mic for minimum distortion.
+                The FET transistor in the circuit provides the main amplification for the input signal. A FET transistor needs a proper DC bias voltage to operate at its designed voltage range without clipping the signal. A trimpot (variable resistor) is used to optimize the load by sending a 1KHz signal to the gate of the transistor and watch the output signal from the mic for minimum distortion.
                 <br><br>  
                 The procedure for the transistor biasing need to be done with caution, because high 48v phantom power needed to operate the mic circuit. Besides safety caution, an accidental short of the circuit can easily blow up the transistor. Because the gate of the transistor has 46v DC voltage applied, and when it is connected to the signal generator such a high voltage could cause damage to the generator. A 1000pf capacitor is used between the gate and the signal generator to isolate the signal generator from the high DC voltage, in the meantime allow the AC voltage of the 1KHz signal passing through.  
                 <br><br>  
@@ -217,7 +219,7 @@
                     </li> 
                 </ul> <br>
                 <p class="long-copy">
-                I do not have a dedicated signal generator, so I used my audio interface both as the signal generator and the oscilloscope. I played a 1KHz sine wave (ready downloadable from the internet) in quick time player of my Macbook pro in loop mode (do not use iTunes since I found that it will mess up the sine wave) and connected the analogue output from my interface to the isolating capacitor shown above. The output from the mic then is connected to the interface and converted back into a digital signal and send to the Adobe Audition software on my computer, from which I can examine the waveform of the resulting signal and do frequency analysis if wanted.
+                I do not have a dedicated signal generator, so I used my audio interface both as the signal generator and the oscilloscope. I played a 1KHz sine wave (ready downloadable from the internet) in quick time player of my Macbook pro in loop mode (do not use iTunes since I found that it will mess up the sine wave) and connected the analog output from my interface to the isolating capacitor shown above. The output from the mic then is connected to the interface and converted back into a digital signal and send to the Adobe Audition software on my computer, from which I can examine the waveform of the resulting signal and do frequency analysis if wanted.
                 </p> <br>
             </div>
             <div class="row">
@@ -229,7 +231,7 @@
                     </li> 
                 </ul><br>
                 <p class="long-copy">
-                I first played the sine wave at -20dB level and adjust the wave form to be as symmetric as possible, and gradually worked my way up to 0dB, here is what the wave looked like at 0dB before I further fine tune the trimmer pot. It shows a slightly flattened bottom:
+                I first played the sine wave at -20dB level and adjust the waveform to be as symmetric as possible, and gradually worked my way up to 0dB, here is what the wave looked like at 0dB before I further fine-tune the trimmer pot. It shows a slightly flattened bottom:
                 </p> <br>
                 <ul class="mic-showcase clearfix">
                      <li>
@@ -239,7 +241,7 @@
                     </li> 
                 </ul> <br>
                 <p class="long-copy">
-                The wave looks not bad already because I have gradually worked my way up here, but a final tweak of the trimpot yielded almost a perfect wave form. This is very impressive since this is at 0dB or +24dBu, which translates to 12v rms or 17v peak.
+                The wave looks not bad already because I have gradually worked my way up here, but a final tweak of the trimpot yielded almost a perfect waveform. This is very impressive since this is at 0dB or +24dBu, which translates to 12v RMS or 17v peak.
                 </p><br>
                  <ul class="mic-showcase clearfix">
                      <li>

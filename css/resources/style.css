@@ -43,7 +43,7 @@ body {
 }
 
 section {
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 .box { padding: 1%;}
@@ -52,9 +52,10 @@ section {
 /* --- HEADINGS --- */
 h1,
 h2,
-h3{
+h3,
+h4{
     font-weight: 300;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 h1 {
@@ -68,19 +69,32 @@ h1 {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 250%;
     word-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
-h3{
+h3 {
     font-size: 110%;
     margin-bottom: 15px;
     color: #555;
 }
-h2:after {
+
+h4 {
+    font-size: 220%;
+    word-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+
+h2:after, 
+h4:after {
     display: block;
     height: 2px;
     background-color: #1dd1a1;
@@ -89,6 +103,7 @@ h2:after {
     margin: 0 auto;
     margin-top: 30px;
 }
+
 
 /* --- PARAGRAPHS --- */
 .long-copy {
@@ -230,7 +245,7 @@ header {
 .photo-bg {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photo-back.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/photo-background-min2.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -266,7 +281,7 @@ header {
 .comm-bg {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/CommServ/seniorRecital02.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/orchestra2.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -316,10 +331,10 @@ header {
 
 .photo-text-box  {
     font-size: 55%;
-    margin-top: 14%;
-    margin-left: 20%;
-    margin-right: 3%;
-    text-align: right;
+    margin-top: 35%;
+    margin-left: 10%;
+    margin-right: 20%;
+    text-align: left;
 }
 
 
@@ -332,10 +347,12 @@ header {
 
 .SW-name {
     text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
     color: #fff;
     position: relative;
     display: table;
     margin: 0.6% auto;
+    font-size: 120%;
 }
 
 .main-nav li {
@@ -409,34 +426,34 @@ header {
     color: #555; 
 }
 
-.sticky .main-nav .dropdown-content a.current2 {color: #19b58c;}
+.sticky .main-nav .dropdown-content a.current2 {color: rgb(255, 255, 255);}
 
 /* ----------------------------- */
 /* ABOUT */
 /* ----------------------------- */
 
+.section-bio {background-color: rgb(248, 238, 228);}
+
 .section-bio p {
     text-align: justify;
-    text-indent: 8%;
 }
 
-.section-repertoire {background-color: #f2f2f2;}
+.section-repertoire {background-color: rgba(205, 202, 198, 0.59);}
 
 .section-repertoire .repertoire-table{
-    width: 90%;
-    text-align: center;
+    width: 100%;
     margin-left: 5%;
 }
 .section-repertoire .repertoire-table th {
-    max-width: 50px;
     height: 50px;
+    width: 10%;
     background-color: none;
     color: #555;
     border: 1px solid #8e8e8e;
 }
 
 .section-repertoire .repertoire-table td {
-    max-width: 0px;
+    width: 10%;
     height: 40px;
     border: 1px solid #8e8e8e;
 }
@@ -445,30 +462,41 @@ header {
 /* PIANO */
 /* ----------------------------- */
 
+.piano-text-box  {
+    font-size: 55%;
+    margin-top: 35%;
+    margin-left: 14%;
+    margin-right: 20%;
+    text-align: left;
+}
+
 .section-impact-vids p {
     text-align: center;
 }
 
 .section-repertoire .repertoire-table {
-    width: 90%;
+    width: 50%;
     text-align: left;
-    margin-left: 5%;
+    margin: 0 auto;
 }
 .section-repertoire .repertoire-table th {
-    max-width: 50px;
     height: 50px;
     color: #555;
     border: 0px solid transparent;
 }
 
-.section-repertoire .repertoire-table td {
-    max-width: 0px;
+.section-repertoire .repertoire-table .first-row {
     height: 40px;
     border: 0px solid transparent;
+    width: 80%;
 }
 
-.first-row {text-align: left;}
-.second-row {text-align: right;}
+.section-repertoire .repertoire-table .second-row {
+    height: 40px;
+    border: 0px solid transparent;
+    width: 50%;
+}
+
 /* ----------------------------- */
 /* MIC */
 /* ----------------------------- */
@@ -517,7 +545,7 @@ figcaption {
 }
 
 .section-impact-vids {
-    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/music_wallpaper.jpg);
+    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/CommServ/music_wallpaper.jpg);
     z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -660,88 +688,6 @@ figcaption {
     margin-top: 10px;
     margin-left: 72px;
 }
-
-/* ----------------------------- */
-/* PHOTOS Thumbnails Splitscreen */
-/* ----------------------------- */
-/* Split the screen in half */
-.split {
-    height: 82%;
-    width: 50%;
-    position: absolute;
-    background-position: center bottom;
-    z-index: 1;
-    top: 10;
-    overflow-x: hidden;
-    padding-top: 100px;
-}
-
-/* Control the left side */
-.left {
-    left: 0;
-    bottom: 0;
-    background-size: 800%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(../img/Sunset/Sunset2.jpg);
-    background-position: 40% 65%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s;
-}
-
-.left:hover {
-    background-size: 900%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/Sunset/Sunset2.jpg);
-}
-
-.left a: link,
-.left a: visited { z-index: 999; text-decoration: none; }
-
-
-/* Control the right side */
-.right {
-    right: 0;
-    bottom: 0;
-    background-size: 200%;
-    background-position: 0% 69%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/Indoors/Photo-faucet.jpg);
-    background-repeat: no-repeat;
-    transition: background-size 0.3s;
-}
-
-.right:hover {
-    background-size: 225%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/Indoors/Photo-faucet.jpg);
-}
-
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered a {
-    color: #fff;
-    font-size: 200%;
-}
-
-.centered a:link,
-.centered a:visited {
-    border: 2px solid transparent;
-    text-decoration: none;
-    padding: 1px 1px 1px 1px;
-    transition: color 0.2s;
-}
-
-
-.centered a:hover,
-.centered a:active {
-    color: #9ef7dd;
-    font-size: 200%;
-}
-
-
 
 /* ----------------------------- */
 /* HOW IT WORKS */
