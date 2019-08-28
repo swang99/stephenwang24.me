@@ -251,7 +251,7 @@ header {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-clip: content-box;
-    height: 100vh;
+    height: 90vh;
 }
 
 .photo-gen-bg {
