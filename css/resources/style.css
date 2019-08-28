@@ -221,7 +221,7 @@ header {
 .abt-bg{
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/Piano-seated2.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/Piano-seated2.png);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -235,23 +235,23 @@ header {
     margin: 0 auto;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/piano-close-view.jpg);
     background-size: cover;
-    background-position: right 0;
+    background-position: 0px auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-clip: content-box;
-    height: auto;
+    height: 100vh;
 }
 
 .photo-bg {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/photo-background-min2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/photo-background-min2.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-clip: content-box;
-    height: 90vh;
+    height: 100vh;
 }
 
 .photo-gen-bg {
@@ -316,8 +316,8 @@ header {
 
 
 .hero-text-box  {
-    margin-top: 13%;
-    margin-left: 5%;
+    margin-top: 20vh;
+    margin-left: 7.5%;
 }
 
 .photo-gen-box li {
@@ -546,7 +546,7 @@ figcaption {
 }
 
 .section-impact-vids {
-    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/CommServ/music-wallpaper.jpg);
+    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/CommServ/music_wallpaper.jpg);
     z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
