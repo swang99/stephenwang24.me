@@ -9,21 +9,6 @@
     .row {padding: 0 2%;}
 }
 
-/* adjusting Index + About background*/
-@media only screen and (min-width: 1200px) {
-    .abt-bg {
-        padding: 0px 0px 0px 0px;
-        margin: 0 auto;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/Piano-seated.jpg);
-        background-size: cover;
-        background-position: 0px auto;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        height: 100vh;
-    }
-}
-
 /* adjusting Piano background*/
 @media only screen and (max-width: 990px) {
     .piano-bg {
@@ -38,22 +23,6 @@
         height: 100vh;
     }
 }
-
-/* adjusting CommServ background*/
-@media only screen and (max-width: 1095px) {
-    .comm-bg {
-       padding: 0px 0px 0px 0px;
-        margin: 0 auto;
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/CommServ/green-011.jpg);
-        background-size: cover;
-        background-position: 0px auto;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        height: 100vh; 
-    }
-}
-
 
 /* Small tablet to big tablet: from 768 to (933) 1023 px */
 @media only screen and (max-width: 1023px) {
