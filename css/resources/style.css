@@ -546,7 +546,7 @@ figcaption {
 }
 
 .section-impact-vids {
-    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/music-background.jpg);
+    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/CommServ/music-wallpaper.jpg);
     z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
