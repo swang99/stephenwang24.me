@@ -71,7 +71,7 @@ h1 {
 h2 {
     font-size: 250%;
     word-spacing: 2px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -86,7 +86,7 @@ h3 {
 h4 {
     font-size: 220%;
     word-spacing: 2px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -209,7 +209,7 @@ input[type=submit]:active {
 header {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/Piano-seated2.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/Piano-seated-edit.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -221,7 +221,7 @@ header {
 .abt-bg{
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/Piano-seated2.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.20)), url(../img/Piano-seated-edit.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -305,7 +305,7 @@ header {
 .contact-bg {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/SWinit.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(../img/contact-gradient.png);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -316,6 +316,7 @@ header {
 
 
 .hero-text-box  {
+    position: relative;
     margin-top: 20vh;
     margin-left: 7.5%;
 }
@@ -348,11 +349,11 @@ header {
 
 .SW-name {
     text-transform: capitalize;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Raleway', sans-serif;
     color: #fff;
     position: relative;
     display: table;
-    margin: 0.6% auto;
+    margin: 20px auto auto;
     font-size: 120%;
 }
 
@@ -403,7 +404,7 @@ header {
     width: 100%;
     background-color: #eafff9;
     box-shadow: 0 2px 2px #efefef;
-    z-index: 9999; /* layers - nav always on top */
+    z-index: 6; /* layers - nav always on top */
 }
 
 .sticky .main-nav { margin-top: 9px; margin-bottom: 9px; }
@@ -546,7 +547,7 @@ figcaption {
 }
 
 .section-impact-vids {
-    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/CommServ/music-wallpaper.jpg);
+    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/music-background.jpg);
     z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -640,54 +641,77 @@ figcaption {
    
 }
 
-/* The container <div> - needed to position the dropdown content */
 
-.photo-dropdown {
-    position: relative;
-    display: block;
-    border-bottom: 0px solid transparent;
+/* ----------------------------- */
+/* MODAL Photo*/
+/* ----------------------------- */
+
+#mod {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+#mod:hover {opacity: 0.85;}
 
-/* Links inside the dropdown */
-.dropdown-content a {border: 0;}
-
-/* Change color of dropdown links on hover */
-.dropdown-content{
-    display: none;
-    text-align: center;
-    font-size: 80%;
-    margin-top: 1.5px;
-    position: absolute;
-    background-color: rgba(137, 137, 137, 0.5);
-    max-width: 109.5px;
-    line-height: 170%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 5;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 7; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
-/* Show the dropdown menu on hover */
-.photo-dropdown:hover .dropdown-content {
-    display: block; 
+/* Modal Content (Image) */
+.modal-content {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  /* max-width: 700px; */
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.photo-dropdown:hover .dropbtn {
-    color: #1dd1a1;
-    text-transform: lower;
+/* Add Animation - Zoom in the Modal */
+.modal-content { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
-.photo-type-previews li {
-    list-style: none;
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
 }
 
-.photo-type-previews img {
-    height: auto; 
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
     width: 100%;
-    display: inline-block;
-    background-size: 100%;
-    margin-top: 10px;
-    margin-left: 72px;
+  }
 }
 
 /* ----------------------------- */
