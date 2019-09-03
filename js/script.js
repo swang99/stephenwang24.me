@@ -178,6 +178,12 @@ $('document').ready(function() {
         modalImg.src = this.src;
     }
     
+    img = document.getElementById("GoldenWheat");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+    
     
 
     // Get the <span> element that closes the modal
