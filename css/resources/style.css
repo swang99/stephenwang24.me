@@ -558,6 +558,11 @@ figcaption {
     background-size: cover;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 /* ----------------------------- */
 /* STOCKS */
 /* ----------------------------- */
