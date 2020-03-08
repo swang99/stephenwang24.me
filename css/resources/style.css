@@ -400,8 +400,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f5fffc;
+    background-color: rgba(245, 255, 252);
     box-shadow: 0 2px 2px #efefef;
+    transition: 0.4s;
     z-index: 6; /* layers - nav always on top */
 }
 
