@@ -402,7 +402,7 @@ header {
     width: 100%;
     background-color: rgba(245, 255, 252);
     box-shadow: 0 2px 2px #efefef;
-    transition: 0.4s;
+    transition: 0.25s;
     z-index: 6; /* layers - nav always on top */
 }
 
