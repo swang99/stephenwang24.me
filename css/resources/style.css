@@ -14,7 +14,7 @@
 
 html,
 body {
-    background-color: #fff;
+    background-color: #fcfcfc;
     color: #484848;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
@@ -59,7 +59,7 @@ h4{
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
+    color: #ffffff;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
