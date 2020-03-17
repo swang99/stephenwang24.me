@@ -204,10 +204,11 @@ input[type=submit]:active {
 /* HEADER */
 /* ----------------------------- */
 
+/* Find a way to not have to copy the same code for each background */
+
 header {
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/Piano-seated-edit.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: scroll;
@@ -216,10 +217,11 @@ header {
     height: 100vh; /* cover 100% viewport */
 }
 
-.abt-bg{
+
+.abt-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.20)), url(../img/Piano-seated-edit.jpg);
     padding: 0px 0px 0px 0px;
     margin: 0 auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.20)), url(../img/Piano-seated-edit.jpg);
     background-size: cover;
     background-position: 0px auto;
     background-attachment: fixed;
@@ -468,6 +470,19 @@ header {
     margin-right: 20%;
     text-align: left;
 }
+
+.piano-quote,
+.photo-quote {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.piano-quote:first-letter,
+.photo-quote:first-letter {text-transform: uppercase;}
 
 .section-impact-vids p {text-align: center;}
 
