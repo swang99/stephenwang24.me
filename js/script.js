@@ -92,32 +92,6 @@ $('document').ready(function () {
     });
 
     /* Music Outreach Slideshow */
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    var slideIndexx = 2;
-    showDivs(slideIndexx);
-    var slideIndexxx = 3;
-    showDivs(slideIndexxx);
-    
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-        showDivs(slideIndexx += n);
-        showDivs(slideIndexxx += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("my-photo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length};
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-        x[slideIndex-1].style.display = "block";
-        x[slideIndexx-1].style.display = "block";
-        x[slideIndexxx-1].style.display = "block";
-    }
 
     /* Modal images */
     var img = document.getElementById("RainChain01");
