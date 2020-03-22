@@ -448,14 +448,6 @@ header {
 /* MIC */
 /* ----------------------------- */
 
-.mic-text-box {
-    font-size: 60%;
-    margin-top: 31%;
-    margin-left: 12%;
-    margin-right: 20%;
-    text-align: left;
-} 
-
 .section-mic-purpose p, 
 .section-mic-materials p,
 .section-mic-build p,
@@ -539,12 +531,6 @@ figcaption {
 /* ----------------------------- */
 /* STOCKS */
 /* ----------------------------- */
-
-.stocks-text-box  {
-    position: relative;
-    margin-top: 20vh;
-    margin-left: 7.5%;
-}
 
 .section-features .long-copy {margin-bottom: 40px; text-align: center;}
 
