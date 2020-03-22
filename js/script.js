@@ -1,5 +1,6 @@
 /* global $ */
 /*eslint-env browser*/
+/*jslint maxerr: 1000 */
 
 $('document').ready(function () {
     /* For the sticky navigation */
@@ -15,6 +16,7 @@ $('document').ready(function () {
     }}, {
     offset: '35px;'
 });
+
     $('.js--section-bio').waypoint(function(direction) {
     if (direction == "down") {
         $('nav').addClass('sticky');
@@ -27,6 +29,7 @@ $('document').ready(function () {
     }}, {
     offset: '35px;'
 });
+    
     $('.js--section-purpose').waypoint(function(direction) {
     if (direction == "down") {
         $('nav').addClass('sticky');
@@ -38,10 +41,10 @@ $('document').ready(function () {
         $('nav').fadeIn(250);
     }}, {
     offset: '35px;'
-});
+    });
 
 
-    /* Scroll on buttons */
+/* Scroll on buttons */
     $('.js--scroll-to-top-stocks').click(function () {
         $('html, body').animate({scrollTop: $('.js--section-top-stocks').offset().top}, 1000);
     });
@@ -76,140 +79,36 @@ $('document').ready(function () {
     });
 });
 
-    /* Mobile nav */
-    $('.js--nav-icon').click(function () {
-        var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon i');
-        nav.slideToggle(200);
-        if (icon.hasClass('ion-navicon-round')) {
-            icon.addClass('ion-close-round');
-            icon.removeClass('ion-navicon-round');
-        } else {
-            icon.addClass('ion-navicon-round');
-            icon.removeClass('ion-close-round'); 
-        }
-        
+/* Mobile nav */
+$('.js--nav-icon').click(function () {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    nav.slideToggle(300);
+    if (icon.hasClass('ion-ios-menu')) {
+        icon.addClass('ion-ios-close');
+        icon.removeClass('ion-ios-menu');
+    } else {
+        icon.addClass('ion-ios-menu');
+        icon.removeClass('ion-ios-close');
+    }
+});
+
+/* Music Outreach Slideshow */
+$('document').ready(function () {
+    $("#lightgallery").lightGallery({
+        thumbnail: true
     });
+    $("#video-gallery").lightGallery({
+        loadYoutubeThumbnail: 2,
+        animateThumb: true,
+        youtubeThumbSize: 'default',
+    });
+});
 
-    /* Music Outreach Slideshow */
-
-    /* Modal images */
-    var img = document.getElementById("RainChain01");
-    var modal = document.getElementById("myModal");
-    var modalImg = document.getElementById("img01");
-
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("Deck");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("PurpleFlower01");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("RainChain02");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("RainChain03");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("PinkFlower01");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("Sunset01");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("RainChain04");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("RedFlower01");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("Sunset02");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("Landing01");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("YellowLily");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("LeavesBranch");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("Landing02");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("Landing03");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    img = document.getElementById("GoldenWheat");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-     img = document.getElementById("DHMCChamber1");
-    img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-    }
-    
-    
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-
-    
+/* Hide elements when mobile nav is clicked */
+$('.js--nav-icon').click(function () {
+       $('.js--hide').fadeToggle(300) 
+    });
 
 
     

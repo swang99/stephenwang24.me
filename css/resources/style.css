@@ -311,11 +311,13 @@ header {
 }
 
 .main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 2px solid #1dd1a1;
-}
+.main-nav li a:active {border-bottom: 2px solid #1dd1a1;}
 
-.main-nav li a.current {border-bottom: 2px solid #1dd1a1;}
+
+.main-nav li a.current,
+.main-nav li a:link.current,
+.main-nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
+
 .main-nav li a.current2 {color: #1dd1a1;}
 
 /* Mobile navi */
@@ -324,7 +326,6 @@ header {
     margin-top: 30px;
     cursor: pointer;
     display: none;
-    
 }
 
 .mobile-nav-icon i {
@@ -339,13 +340,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(245, 255, 252);
+    background-color: rgba(245, 255, 252, 0.97);
     box-shadow: 0 2px 2px #efefef;
     transition: 0.25s;
     z-index: 6; /* layers - nav always on top */
 }
 
-.sticky .main-nav { margin-top: 9px; margin-bottom: 9px; }
+.sticky .main-nav {margin-top: 9px; margin-bottom: 9px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited { padding: 6.5px 0; color: #555; }
@@ -353,12 +354,7 @@ header {
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
 
-.sticky .dropdown-content {
-    margin-top: 10px;
-    font-size: 80%;
-    line-height: 170%;
-    background-color: rgb(234, 255, 249);
-}
+
 
 .sticky .dropdown-content a:link,
 .sticky .dropdown-content a:visited { 
@@ -494,28 +490,42 @@ figcaption {
     text-align: right;
 }
 
-.comm-photos-showcase li {
-    display: block;
-    float: left;
-    width: 33%;    
+
+.comm-photos-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
-.impact-vids, .piano-vids {
-    display: block;
-    margin: 0 auto;
-    z-index: 5;
+.comm-photos-showcase li {width: 33%;}
+.comm-photos-showcase li a {border: none;}
+
+@media (max-width: 533px) {.comm-photos-showcase li {width: 50%;}} 
+
+.comm-video-showcase {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    list-style: none;
 }
+
+.comm-video-showcase a {
+    width: 20%; 
+    height: auto;
+    text-align: center;
+    margin-bottom: 1%;
+    border: none;
+}
+
+@media (max-width: 825px) {.comm-video-showcase a {width: 25%;}} 
+@media (max-width: 665px) {.comm-video-showcase a {width: 33%;}} 
+@media (max-width: 530px) {.comm-video-showcase a {width: 50%;}} 
 
 .section-impact-vids {
     background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/music-background.jpg);
     z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-iframe {
-    display: block;
-    margin: 0 auto;
 }
 
 /* ----------------------------- */
@@ -553,16 +563,14 @@ iframe {
 
 .section-meals {padding: 0;}
 
-.photos-showcase{
+.photos-showcase {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    width: 100%; 
 }
 
-.photos-showcase li {
-    display: block;
-    float: left;
-    width: 50%;    
-}
+.photos-showcase li {width: 50%;}
+.photos-showcase li a {border: none;}
 
 .my-photo {
     width: 100%;
@@ -574,109 +582,6 @@ iframe {
 .my-photo img {
     width: 100%;
     height: auto;
-}
-
-.faucet {
-    width: auto;
-    height: 80%;
-    margin: 0;
-    overflow: hidden;
-    background-color: #f2f2f2;
-}
-
-.faucet img {
-    width: auto;
-    max-height: 760px;
-}
-
-/* Dropdown Button - Photography tab */
-.dropbtn: link,
-.dropbtn: visited {
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 100%;
-    border-bottom: 0px solid transparent;
-   
-}
-
-.dropbtn: hover,
-.dropbtn: active {
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 100%;
-    border-bottom: 2px solid #1dd1a1;
-   
-}
-
-
-/* ----------------------------- */
-/* MODAL Photo*/
-/* ----------------------------- */
-
-#mod {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#mod:hover {opacity: 0.85;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 7; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
-    padding-bottom: 50px;
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: 0 auto;
-  display: block;
-  width: 80%;
-  /* max-width: 700px; */
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content { 
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
 }
 
 /* ----------------------------- */
@@ -785,14 +690,9 @@ cite img {
 /* PLANS */
 /* ----------------------------- */
 
-.section-plans {
-    background-color: #f2f2f2;
-   
-}
+.section-plans {background-color: #f2f2f2;}
 
-.section-plans li {
-    list-style: none;
-}
+.section-plans li {list-style: none;}
 
 .plan-box {
     background-color: #fff;
@@ -817,7 +717,7 @@ cite img {
     border: 0;
 }
 
-.plan-price{
+.plan-price {
     color: #e67e22;
     font-size: 300%;
     margin-bottom: 10px;
@@ -830,13 +730,9 @@ cite img {
     font-weight: 300;
 }
 
-.plan-price-meal {
-    font-size: 80%;
-}
+.plan-price-meal {font-size: 80%;}
 
-.plan-box ul li {
-    padding: 5px 0;
-}
+.plan-box ul li {padding: 5px 0;}
 
 /* ----------------------------- */
 /* FORM */
@@ -879,9 +775,7 @@ textarea {
     padding: 0 7px;
 }
 
-textarea {
-    height: 100px;
-}
+textarea {height: 100px;}
 
 *: focus {outline: none}
 
@@ -913,9 +807,7 @@ footer{
 }
 
 .footer-nav li:last-child,
-.social-links li:last-child {
-    margin: 0;
-}
+.social-links li:last-child {margin: 0;}
 
 .footer-nav li a:link,
 .footer-nav li a:visited,
@@ -928,14 +820,10 @@ footer{
 }
 
 .footer-nav li a:hover,
-.footer-nav li a:active {
-    color: #ddd
-}
+.footer-nav li a:active {color: #ddd;}
 
 .social-links li a:link,
-.social-links li a:visited {
-    font-size: 160%;
-}
+.social-links li a:visited {font-size: 160%;}
 
 .ion-social-facebook,
 .ion-social-instagram {transition: color 0.2s;}

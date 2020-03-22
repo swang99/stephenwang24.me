@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../css/resources/animate.css" type="text/css"> 
         <link rel="stylesheet" href="../css/resources/style.css" type="text/css"> 
         <link rel="stylesheet" href="../css/resources/queries.css" type="text/css"> 
+        <link type="text/css" rel="stylesheet" href="../css/resources/lightgallery.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" type="text/css"> 
         <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
         <title>Stephen Wang - Photography</title> 
@@ -35,115 +36,96 @@
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-ios-menu"></i></a>
                 </div>
-                
             </nav>
             <img>
-            <div class="photo-text-box">
+            <div class="photo-text-box js--hide">
                 <div class="photo-quote"><i>"A photo is not made in a camera </i><br><i>but on either side of it.</i>"</div> 
             </div>
         </header> 
         
      <section class="section-features js--section-features" id="features">
-            <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            </div>
-            <div class="row">
+            <div class="row" id="aniimated-thumbnials">
                 <h2><b>Photo Gallery</b></h2>
-                <ul class="photos-showcase clearfix">
-                     <li>
-                        <figure class="my-photo"> 
-                            <img id="RainChain01" src="/css/img/Rainchain/Photo-rainchain-min.jpg" alt="Rain chain 1">
-                        </figure>
+                <ul class="photos-showcase clearfix" id="lightgallery">
+                    <li data-src="/css/img/Photo/Rainchain1.jpg">
+                        <a class="my-photo" href> 
+                            <img src="/css/img/Photo/Rainchain1.jpg">
+                        </a>
                     </li> 
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="Deck" src="/css/img/Photo-deck-min.jpg" alt="Deck">
-                        </figure>
+                    <li data-src="/css/img/Photo-deck-min.jpg">
+                        <a class="my-photo" href> 
+                            <img src="/css/img/Photo-deck-min.jpg">
+                        </a>
                     </li>
-                </ul>
-                <ul class="photos-showcase clearfix">
-                     <li>
-                        <figure class="my-photo"> 
-                            <img id="PurpleFlower01" src="/css/img/Flowers/flower20.jpg" alt="Purple Flower">
-                        </figure>
+                    <li data-src="/css/img/Photo/PurpleFlower.jpg">
+                        <a class="my-photo" href>  
+                            <img src="/css/img/Photo/PurpleFlower.jpg" alt="Purple Flower">
+                        </a>
                     </li>      
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="RainChain02" src="/css/img/Rainchain/photo-rainchain2-min.jpg" alt="Rain Chain 2">
-                        </figure>
+                    <li data-src="/css/img/Photo/Rainchain2.jpg">
+                        <a class="my-photo" href>  
+                            <img src="/css/img/Photo/Rainchain2.jpg" alt="Rain Chain 2">
+                        </a>
                     </li>      
-                </ul>
-                <ul class="photos-showcase clearfix">
-                     <li>
-                        <figure class="my-photo"> 
-                            <img id="RainChain03" src="/css/img/Rainchain/photo-rainchain3-min.jpg" alt="Rain chain 3">
-                        </figure>
+                    <li data-src="/css/img/Photo/Rainchain3.jpg">
+                        <a class="my-photo" href> 
+                            <img src="/css/img/Photo/Rainchain3.jpg" alt="Rain Chain 3">
+                        </a>
                     </li>      
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="PinkFlower01" src="/css/img/Flowers/flower17.jpg" alt="Flower 17">
-                        </figure>
+                    <li data-src="/css/img/Photo/PinkLily.jpg">
+                        <a class="my-photo" href> 
+                            <img id="PinkFlower01" src="/css/img/Photo/PinkLily.jpg" alt="Pink Lily">
+                        </a>
                     </li>      
-                </ul>
-                <ul class="photos-showcase clearfix">
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="Sunset01" src="/css/img/Sunset/Sunset2-min.jpg" alt="Sunset 1">
-                        </figure>
+                    <li data-src="/css/img/Photo/Sunset2.jpg" alt="Sunset 1">
+                        <a class="my-photo" href> 
+                            <img id="Sunset01" src="/css/img/Photo/Sunset2.jpg" alt="Sunset 1">
+                        </a>
                     </li>      
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="RainChain04" src="/css/img/Rainchain/rain-chain01-min.jpg" alt="Rain Chain 4">
-                        </figure>
+                    <li data-src="/css/img/Photo/Rainchain4.jpg">
+                        <a class="my-photo" href> 
+                            <img id="RainChain04" src="/css/img/Photo/Rainchain4.jpg" alt="Rain Chain 4">
+                        </a>
                     </li>      
-                </ul>
-                <ul class="photos-showcase clearfix">
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="RedFlower01" src="/css/img/Flowers/flower11.JPG" alt="Red flower">
-                        </figure>
+                    <li data-src="/css/img/Photo/RedFlower.jpg">
+                        <a class="my-photo" href> 
+                            <img id="RedFlower01" src="/css/img/Photo/RedFlower.jpg" alt="Red flower">
+                        </a>
                     </li>      
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="Sunset02" src="/css/img/Sunset/Sunset4-min.jpg" alt="Sunset 4">
-                        </figure>
+                    <li data-src="/css/img/Photo/Sunset4.jpg">
+                        <a class="my-photo" href> 
+                            <img id="Sunset02" src="/css/img/Photo/Sunset4.jpg" alt="Sunset 4">
+                        </a>
                     </li>      
-                </ul>
-                <ul class="photos-showcase clearfix">
-                     <li>
-                        <figure class="my-photo"> 
-                            <img id="Landing01" src="/css/img/Sunset/Landing3.jpg" alt="Wilson's Landing B&W">
-                        </figure>
+                     <li data-src="/css/img/Photo/Landing3.jpg">
+                        <a class="my-photo" href>  
+                            <img id="Landing01" src="/css/img/Photo/Landing3.jpg" alt="Wilson's Landing 3">
+                        </a>
                     </li>      
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="YellowLily" src="/css/img/Flowers/flower21.JPG" alt="Yellow Lily">
-                        </figure>
+                    <li data-src="/css/img/Photo/YellowLily.jpg">
+                        <a class="my-photo" href> 
+                            <img id="YellowLily" src="/css/img/Photo/YellowLily.jpg" alt="Yellow Lily">
+                        </a>
                     </li>      
-                </ul>
-                <ul class="photos-showcase clearfix">
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="LeavesBranch" src="/css/img/Sunset/H5A1197.jpg" alt="LeavesBranch">
-                        </figure>
+                    <li data-src="/css/img/Photo/LeavesBranch.jpg">
+                        <a class="my-photo" href> 
+                            <img id="LeavesBranch" src="/css/img/Photo/LeavesBranch.jpg" alt="LeavesBranch">
+                        </a>
                     </li>      
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="Landing02" src="/css/img/Sunset/Landing2.jpg" alt="Wilson's Landing 2">
-                        </figure>
+                    <li data-src="/css/img/Photo/LandingB&W.jpg" >
+                        <a class="my-photo" href> 
+                            <img id="Landing02" src="/css/img/Photo/LandingB&W.jpg" alt="Wilson's Landing B&W">
+                        </a>
                     </li>     
-                </ul>
-                <ul class="photos-showcase clearfix">
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="GoldenWheat" src="/css/img/Sunset/GoldenWheat.jpg" alt="Golden Wheat">
-                        </figure>
+                    <li data-src="/css/img/Photo/GoldenWheat.jpg">
+                        <a class="my-photo" href> 
+                            <img id="GoldenWheat" src="/css/img/Photo/GoldenWheat.jpg" alt="Golden Wheat">
+                        </a>
                     </li>      
-                    <li>
-                        <figure class="my-photo"> 
-                            <img id="Landing03" src="/css/img/Sunset/Landing4.jpg" alt="Wilson's Landing 3">
-                        </figure>
+                    <li data-src="/css/img/Photo/Landing4.jpg">
+                        <a class="my-photo" href> 
+                            <img id="Landing03" src="/css/img/Photo/Landing4.jpg" alt="Wilson's Landing 4">
+                        </a>
                     </li>     
                 </ul>
             </div>
@@ -163,6 +145,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/js/jquery.waypoints.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/lightgallery.min.js"></script>
+    <script src="/js/lg-thumbnail.min.js"></script>
+    <script src="/js/lg-fullscreen.min.js"></script>
+    <script src="/js/lg-zoom.min.js"></script>
+        
     </body>
 </html>
 
