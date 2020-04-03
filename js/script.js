@@ -93,6 +93,13 @@ $('.js--nav-icon').click(function () {
     }
 });
 
+/* Show main nav after window resize */
+$(window).resize(function() {
+        if ($(this).width() > 400) {
+               $(".nav-menu").show(); 
+        }
+});
+
 /* Music Outreach Slideshow */
 $('document').ready(function () {
     $("#lightgallery").lightGallery({
