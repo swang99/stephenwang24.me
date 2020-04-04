@@ -9,8 +9,6 @@
     .row {padding: 0 2%;}
 }
 
-/* adjusting Piano background*/
-
 /* Small tablet to big tablet: from 768 to (933) 1023 px */
 @media only screen and (max-width: 1023px) {
     body {font-size: 18px;}
@@ -100,6 +98,13 @@
     margin-top: 80%;
 }}
     
+/* ABOUT */
+@media only screen and (max-width: 550px) {
+    .abt-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.20)), url(../img/Piano-portrait2.jpg); 
+    background-size: cover;
+    background-position: center;
+    }}
 
 /* PIANO */
 @media only screen and (min-width: 1060px) {.section-repertoire .repertoire-table td {font-size: 18px;}}
@@ -121,7 +126,7 @@
 
 
 @media only screen and (min-width: 671px) {.wrapped-iframe {height: 315px; width: 560px;}}
-    
+
 /* COMMSERV */
 @media only screen and (max-width: 533px) {
     .NextGenChamb1F {display: block;}
