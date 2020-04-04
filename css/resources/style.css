@@ -584,10 +584,7 @@ figcaption {
 .section-top-stocks .ratings-table th {background-color: #1dd1a1;}
 .section-repertoire .ratings-table th {background-color: rgb(237, 232, 208);}
 .section-top-stocks .ratings-table td {background-color: rgba(29, 209, 161, 0.19);}
-.section-repertoire .ratings-table td {
-    background-color: rgba(253, 251, 241, 0.52);
-    padding: 0 10px;
-}
+.section-repertoire .ratings-table td {background-color: rgba(253, 251, 241, 0.52); padding: 0 10px;}
 
 
 /* ----------------------------- */
@@ -814,7 +811,7 @@ textarea {height: 100px;}
 /* FOOTER */
 /* ----------------------------- */
 
-footer{
+footer {
     background-color: #333; 
     padding: 50px;
     font-size: 80%;
@@ -856,13 +853,6 @@ footer{
 .social-links li a:link,
 .social-links li a:visited {font-size: 160%;}
 
-.ion-social-facebook,
-.ion-social-instagram {transition: color 0.2s;}
-
-.ion-social-facebook:hover{color: #3b5998;}
-
-.ion-social-instagram:hover{color: #517fa4;}
-
 footer p {
     color: #888;
     text-align: center;
@@ -888,6 +878,4 @@ footer p {
 
 .js--wp-1.animated,
 .js--wp-2.animated, 
-.js--wp-3.animated {
-    opacity: 1;
-}
+.js--wp-3.animated {opacity: 1;}
