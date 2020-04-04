@@ -448,6 +448,7 @@ header {
     width: 50%;
 }
 
+
 /* ----------------------------- */
 /* MIC */
 /* ----------------------------- */
@@ -528,6 +529,8 @@ figcaption {
     margin-bottom: 1%;
     border: none;
 }
+
+.NextGenChamb1F {display: none;}
 
 @media (max-width: 825px) {.comm-video-showcase a {width: 25%;}} 
 @media (max-width: 665px) {.comm-video-showcase a {width: 33%;}} 

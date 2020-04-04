@@ -24,7 +24,6 @@
     .icon-small {width: 17px; margin-right: 5px;}
     }
 
-    
 
 /* Small phone to small tablet: from 481 to 767 px */
 @media only screen and (max-width: 905px) {
@@ -106,7 +105,29 @@
 @media only screen and (min-width: 1060px) {.section-repertoire .repertoire-table td {font-size: 18px;}}
 @media only screen and (min-width: 400px) {.section-repertoire .repertoire-table td {font-size: 16px;}}
 @media only screen and (min-width: 300px) {.section-repertoire .repertoire-table td {font-size: 14px;}}
+
+
+/* Responsive Youtube iframe */
+@media only screen and (max-width: 670px) {
+    .wrap-element {
+        position: relative; 
+        overflow: hidden; 
+        padding-top: 56.25%;
+        margin-bottom: 30px;
+    }
     
+    .wrapped-iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;}
+    }
+
+
+@media only screen and (min-width: 671px) {.wrapped-iframe {height: 315px; width: 560px;}}
+    
+/* COMMSERV */
+@media only screen and (max-width: 533px) {
+    .NextGenChamb1F {display: block;}
+    .NextGenChamb1 {display: none;}
+    }
+
 /* STOCKS */
 @media only screen and (max-width: 470px) {
     .btn.btn-full, .btn.btn-ghost {display: none;}
@@ -138,7 +159,6 @@
     textarea {height: 150px;}
     .form .span-1-of-3 {width: 20%;}
 }
-
 
 
 
