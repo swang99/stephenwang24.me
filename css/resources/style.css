@@ -63,7 +63,6 @@ h1 {
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
-    
 }
 
 h2 {
@@ -538,7 +537,7 @@ figcaption {
     opacity: 1;
 }
 
-.NextGenChamb1F {display: none;}
+.NextGenChamb1f {display: none;}
 
 @media (max-width: 825px) {.comm-video-showcase a {width: 25%;}} 
 @media (max-width: 665px) {.comm-video-showcase a {width: 33%;}} 
