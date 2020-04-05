@@ -132,10 +132,19 @@
 @media only screen and (max-height: 380px) {.photo-quote {display:none;}}
 
 /* COMMSERV */
+
+@media only screen and (max-width: 500px) {
+    .comm-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.20)), url(../img/italyorchestra.jpg); 
+    background-size: cover;
+    background-position: center;
+    }}
+
 @media only screen and (max-width: 533px) {
     .NextGenChamb1f {display: block;}
     .NextGenChamb1 {display: none;}
     }
+
 
 /* STOCKS */
 @media only screen and (max-width: 470px) {
