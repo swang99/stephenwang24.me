@@ -97,6 +97,8 @@
     margin-right: 5%;
     margin-top: 80%;
 }}
+
+@media only screen and (max-height: 530px) {.mic-quote {display:none;}}
     
 /* ABOUT */
 @media only screen and (max-width: 550px) {
@@ -107,10 +109,10 @@
     }}
 
 /* PIANO */
+@media only screen and (max-height: 455px) {.piano-quote {display:none;}}
 @media only screen and (min-width: 1060px) {.section-repertoire .repertoire-table td {font-size: 18px;}}
 @media only screen and (min-width: 400px) {.section-repertoire .repertoire-table td {font-size: 16px;}}
 @media only screen and (min-width: 300px) {.section-repertoire .repertoire-table td {font-size: 14px;}}
-
 
 /* Responsive Youtube iframe */
 @media only screen and (max-width: 670px) {
@@ -127,6 +129,9 @@
 
 @media only screen and (min-width: 671px) {.wrapped-iframe {height: 315px; width: 560px;}}
 
+/* PHOTOS */
+@media only screen and (max-height: 380px) {.photo-quote {display:none;}}
+
 /* COMMSERV */
 @media only screen and (max-width: 533px) {
     .NextGenChamb1F {display: block;}
@@ -135,17 +140,18 @@
 
 /* STOCKS */
 @media only screen and (max-width: 470px) {
-    .btn.btn-full, .btn.btn-ghost {display: none;}
     .stocks-text-box {
         margin-left: 5%;
-        margin-top: 33%;
+        top: 50%;
         font-size: 125%;
-        margin-right: 5%;
-    }
+        margin-right: 5%; 
+}}
+
+@media only screen and (max-width: 470px), only screen and (max-height: 430px) {
+    .btn.btn-full, .btn.btn-ghost {display: none;}
 }
     
 /* FORM */
-
 @media only screen and (min-width: 320px) {
     .form-box {font-size: 133%;}
     .contact-form {width: 100%;}
@@ -154,7 +160,7 @@
     textarea {line-height: 200%}
 }
     
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 500px), only screen and (min-height: 600px) {
     .form-box {font-size: 170%;}
 }
     
@@ -165,6 +171,11 @@
     .form .span-1-of-3 {width: 20%;}
 }
 
+@media only screen and (max-height: 587px) {
+    .form-box {margin-top: 0%; margin-bottom: 0%;}
+    .form-box p {display: none;}
+    .form-box:after {height: 0px;}
+}
 
 
 
