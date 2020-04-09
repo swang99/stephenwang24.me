@@ -97,10 +97,10 @@ $('.js--nav-icon').click(function () {
 
 /* Music Outreach Slideshow */
 $('document').ready(function () {
-    $("#lightgallery").lightGallery({
+    $('.lightgallery').lightGallery({
         thumbnail: true
     });
-    $("#video-gallery").lightGallery({
+    $('.videogallery').lightGallery({
         loadYoutubeThumbnail: 2,
         animateThumb: true,
         youtubeThumbSize: 'default',
