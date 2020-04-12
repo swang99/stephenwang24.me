@@ -1,10 +1,6 @@
-/* Original Blue color: #3498db */
-/* Mint color: #1dd1a1 */
-
 /* ----------------------------- */
 /* SETUP */
 /* ----------------------------- */
-
 
 * {
     margin: 0;
@@ -48,10 +44,11 @@ section {padding: 70px 0;}
 
 
 /* --- HEADINGS --- */
+
 h1,
 h2,
 h3,
-h4{
+h4 {
     font-weight: 300;
     text-transform: capitalize;
 }
@@ -285,6 +282,8 @@ header {
     font-size: 120%;
 }
 
+.SW-name:hover {border-bottom: 0px solid transparent;}
+
 .main-nav li {
     display: inline-block; /* make list display horizontally */
     margin-left: 50px;
@@ -321,6 +320,8 @@ header {
     display: none;
 }
 
+.mobile-nav-icon:hover {border-bottom: 0px solid transparent;}
+
 .mobile-nav-icon i {
     font-size: 200%;
     color: #fff;
@@ -346,8 +347,6 @@ header {
 
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
-
-
 
 .sticky .dropdown-content a:link,
 .sticky .dropdown-content a:visited { 
@@ -528,9 +527,7 @@ figcaption {
 }
 
 .comm-video-showcase li a:hover,
-.comm-video-showcase li a:active {
-    opacity: 1;
-}
+.comm-video-showcase li a:active {opacity: 1;}
 
 .NextGenChamb1f {display: none;}
 
@@ -616,96 +613,6 @@ figcaption {
     width: 100%;
     height: auto;
 }
-
-/* ----------------------------- */
-/* TESTIMONIALS */
-/* ----------------------------- */
-
-.section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
-    background-size: cover;
-    color: #fff;
-    background-attachment: fixed;
-}
-
-blockquote {
-    padding: 2%;
-    font-style: italic;
-    line-height: 145%;
-    position: relative;
-    margin-top: 40px;
-}
-
-cite {
-    font-size: 90%;
-    margin-top: 25px;
-    display: block;
-}
-
-blockquote:before {
-    content: "\201C";
-    font-size: 500%;
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -3px;
-}
-
-cite img {
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-
-/* ----------------------------- */
-/* PLANS */
-/* ----------------------------- */
-
-.section-plans {background-color: #f2f2f2;}
-
-.section-plans li {list-style: none;}
-
-.plan-box {
-    background-color: #fff;
-    border-radius: 5px;
-    width: 90%;
-    margin-left: 5%;
-    box-shadow: 0 2px 2px #ededed
-}
-
-.plan-box div {
-    padding: 15px;
-    border-bottom: 1px solid #e2e2e2;
-    border-top-left-radius: 5px;
-}
-
-.plan-box div:first-child {
-    background-color: #fcfcfc;
-}
-
-.plan-box div:last-child {
-    text-align: center;
-    border: 0;
-}
-
-.plan-price {
-    color: #e67e22;
-    font-size: 300%;
-    margin-bottom: 10px;
-    font-weight: 100;
-}
-
-
-.plan-price span {
-    font-size: 30%;
-    font-weight: 300;
-}
-
-.plan-price-meal {font-size: 80%;}
-
-.plan-box ul li {padding: 5px 0;}
 
 /* ----------------------------- */
 /* FORM */
