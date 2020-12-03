@@ -602,6 +602,8 @@ figcaption {
 .photos-showcase li {width: 50%;}
 .photos-showcase li a {border: none;}
 
+.section-fall {background-color: rgb(255, 247, 235);}
+
 .my-photo {
     width: 100%;
     margin: 0;
