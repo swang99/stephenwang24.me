@@ -42,8 +42,7 @@ section {padding: 70px 0;}
 h1, h2, h3, h4 {font-weight: 300; text-transform: capitalize;}
 
 h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0px 0px 20px 0px;
     color: #333;
     font-size: 240%;
     word-spacing: 4px;
@@ -185,7 +184,7 @@ input[type=submit]:active {
 header {
     padding: 130px;
     margin: 0 auto;
-    background-position: 0px auto;
+    background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -239,7 +238,7 @@ nav {
 .SW-name {
     font-family: 'Raleway', sans-serif;
     display: inline-block;
-    margin: 20px 20px 0px 20px;
+    margin-top: 20px;
     padding: 0px;
     border-bottom: 0px solid transparent;
     transition: font-size 0.6s;
@@ -299,6 +298,12 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 /* ABOUT */
 /* ----------------------------- */
 
+.abtSlides {display: flex;}
+
+.abt-showcase {list-style: none;}
+.abt-showcase li {width: 45%; margin: 0 auto;}
+.abt-cap {text-align: center;}
+
 .section-bio {background-color: rgb(248, 245, 242);}
 .section-bio p {text-align: justify;}
 
@@ -307,7 +312,6 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 .section-repertoire .repertoire-table th {
     height: 50px;
     width: 10%;
-    background-color: none;
     color: #555;
     border: 1px solid #8e8e8e;
 }
@@ -398,10 +402,10 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 }
 
 .photos-showcase li {width: 50%;}
-.photos-showcase li a {
+.photos-showcase li a, .abt-showcase li a {
     border: none; 
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     overflow: hidden;
     opacity: 1; 
     transition: opacity 1s;
@@ -436,10 +440,9 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
     display: block;
     height: 2px;
     background-color: #1dd1a1;
-    content: " ";
+    content: "";
     width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin: 30px auto 0px auto;
 }
 
 input[type=text],
@@ -462,6 +465,12 @@ textarea {height: 100px;}
 
 footer {background-color: #333; padding: 50px; font-size: 80%; }
 footer p {color: #888; text-align: center; margin-top: 30px; }
+
+.social-icons {color:rgb(255, 255, 255); text-align: center;}
+.social-icons i {font-size: 120%; margin: 5px;}
+.social-icons .fa-youtube:hover {color: rgb(255, 0, 0); transition: 0.5s;}
+.social-icons .fa-github:hover {color: rgb(142, 5, 196); transition: 0.5s;}
+.social-icons .fa-instagram:hover {color: rgb(255, 255, 255); transition: 0.5s;}
 
 /* ----------------------------- */
 /* ANIMATIONS */

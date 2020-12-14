@@ -15,15 +15,11 @@ $('document').ready(function () {
     }, {offset: '50%'});
     
     $('.js--wp-2').waypoint(function () {
-        $('.js--wp-2').addClass('animated fadeInUp');
+        $('.js--wp-2').addClass('animated fadeInRight');
     }, {offset: '50%'});
     
     $('.js--wp-3').waypoint(function () {
-        $('.js--wp-3').addClass('animated fadeIn');
-    }, {offset: '50%'});
-    
-    $('.js--wp-4').waypoint(function () {
-        $('.js--wp-4').addClass('animated pulse');
+        $('.js--wp-3').addClass('animated pulse');
     }, {offset: '50%'});
 });
 
@@ -45,3 +41,19 @@ $('.js--nav-icon').click(function () {
 /* Hide elements when mobile nav is clicked */
 $('.js--nav-icon').click(function () {
     $('.js--hide').fadeToggle(300)});
+
+/* About slideshow */
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("abtSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
