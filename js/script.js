@@ -6,7 +6,7 @@ $('document').ready(function () {
     /* Sticky nav */
     window.addEventListener('scroll', function(){
         var nav = document.querySelector('nav');
-        nav.classList.toggle('sticky', window.scrollY > 600)
+        nav.classList.toggle('sticky', window.scrollY > 400)
     })
 
     /* Animations on scroll */

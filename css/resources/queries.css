@@ -66,7 +66,6 @@
     
     .sticky .mobile-SW-name {font-size: 0%;}
     .menu-open .mobile-SW-name {font-size: 120%; transition: 0.6s;}
-    .sticky .mobile-nav-icon {margin-top: 0px;}
     .sticky .mobile-nav-icon i {color: #555; padding: 0px;}
     
     .long-copy {width: 100%; margin-left: 0%;  }
@@ -75,12 +74,10 @@
 }
     
 /* ABOUT Queries */
-@media only screen and (max-width: 550px) {
-    .abt-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.20)), url(../img/Piano-portrait2.jpg); 
-    background-size: cover;
-    background-position: center;
-    }}
+@media only screen and (max-width: 905px) {
+    .section-abt {height: 550px;}
+    .abt-showcase li img {margin-top: 150px;}
+}
 
 /* PIANO Queries */
 @media only screen and (min-width: 1060px) {.section-repertoire .repertoire-table td {font-size: 18px;}}

@@ -72,7 +72,6 @@ h4 {
     letter-spacing: 1px;
 }
 
-
 h2:after, 
 h4:after {
     display: block;
@@ -188,11 +187,11 @@ header {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-clip: content-box;
-    height: 100vh; 
+    height: 680px;
 }
 
 .abt-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/Piano-seated-edit.jpg); 
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(122, 102, 102, 0.2)), url(../img/Piano-seated-edit.jpg); 
 }
 
 .piano-bg {
@@ -298,10 +297,13 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 /* ABOUT */
 /* ----------------------------- */
 
-.abtSlides {display: flex;}
 
 .abt-showcase {list-style: none;}
-.abt-showcase li {width: 45%; margin: 0 auto;}
+.abt-showcase li {width: 40%; margin: 0 auto;}
+.abt-showcase li img {padding-top: 20%;}
+.abt-photo img {max-width: 75%; height: auto;}
+.abt-img-container {text-align: center;}
+
 .abt-cap {text-align: center;}
 
 .section-bio {background-color: rgb(248, 245, 242);}
@@ -347,9 +349,8 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 .photo-quote:first-letter {text-transform: uppercase;}
 
 .section-piano-vids {
-    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/music-background.jpg);
+    background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/music-background.jpg) no-repeat;
     z-index: 0;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -401,7 +402,7 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
     list-style: none;
 }
 
-.photos-showcase li {width: 50%;}
+.photos-showcase li {width: 48.5%; margin: 5px auto;}
 .photos-showcase li a, .abt-showcase li a {
     border: none; 
     width: 100%;
