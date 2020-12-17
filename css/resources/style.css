@@ -237,7 +237,7 @@ nav {
 .SW-name {
     font-family: 'Raleway', sans-serif;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 0px;
     border-bottom: 0px solid transparent;
     transition: font-size 0.6s;
@@ -267,6 +267,8 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 .main-nav li a.current2 {color: #1dd1a1;}
 
 /* Mobile nav */
+
+.mobile-nav, .mobile-nav li {display: none;}
 .mobile-nav-icon {
     float: right;
     margin-top: 0px;
@@ -276,7 +278,8 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 
 .mobile-nav-icon:hover {border-bottom: 0px solid transparent;}
 
-.mobile-nav-icon i {font-size: 200%; color: #333;}
+.mobile-nav-icon .ion-ios-menu {font-size: 200%; color: #333;}
+.mobile-nav-icon .ion-ios-close {font-size: 250%;}
 
 /* Sticky navi */
 .sticky {
@@ -297,32 +300,15 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 /* ABOUT */
 /* ----------------------------- */
 
-
+.section-abt {background-color: rgb(235, 243, 245)}
 .abt-showcase {list-style: none;}
 .abt-showcase li {width: 40%; margin: 0 auto;}
-.abt-showcase li img {padding-top: 20%;}
+.abt-showcase li img {display: inline; padding-top: 30%;}
 .abt-photo img {max-width: 75%; height: auto;}
-.abt-img-container {text-align: center;}
-
-.abt-cap {text-align: center;}
+.abt-img-container, .abt-cap {text-align: center;}
 
 .section-bio {background-color: rgb(248, 245, 242);}
 .section-bio p {text-align: justify;}
-
-.section-repertoire {background-color: rgba(205, 202, 198, 0.59);}
-.section-repertoire .repertoire-table {width: 100%; margin-left: 5%;}
-.section-repertoire .repertoire-table th {
-    height: 50px;
-    width: 10%;
-    color: #555;
-    border: 1px solid #8e8e8e;
-}
-
-.section-repertoire .repertoire-table td {
-    width: 10%;
-    height: 40px;
-    border: 1px solid #8e8e8e;
-}
 
 /* ----------------------------- */
 /* PIANO */
@@ -355,6 +341,7 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 }
 
 .section-piano-vids p {text-align: center;}
+.section-repertoire {background-color: rgba(205, 202, 198, 0.59);}
 
 .section-repertoire .repertoire-table {
     width: 50%;
@@ -457,6 +444,8 @@ textarea {
     padding: 0 7px;
 }
 
+.form-fill {padding: 0px;}
+
 textarea {height: 100px;}
 *: focus {outline: none}
 
@@ -464,7 +453,7 @@ textarea {height: 100px;}
 /* FOOTER */
 /* ----------------------------- */
 
-footer {background-color: #333; padding: 50px; font-size: 80%; }
+footer {background-color: #333; padding: 50px; font-size: 80%;}
 footer p {color: #888; text-align: center; margin-top: 30px; }
 
 .social-icons {color:rgb(255, 255, 255); text-align: center;}

@@ -25,7 +25,7 @@ $('document').ready(function () {
 
 /* Mobile nav */
 $('.js--nav-icon').click(function () {
-    var nav = $('nav');
+    var nav = $('.mobile-nav');
     var icon = $('.js--nav-icon i');
     if (icon.hasClass('ion-ios-menu')) {
         icon.addClass('ion-ios-close');
@@ -55,5 +55,5 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 3000); // Change image every 2 seconds
+  setTimeout(carousel, 3000);
 }

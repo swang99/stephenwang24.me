@@ -27,37 +27,47 @@
 @media only screen and (max-width: 905px) {
     body {font-size: 16px;}
     section {padding: 30px 0;}
+    h1 {text-align: center;}
     
     .row {width: 90%; padding: 0 4%;}
     .col {width: 100%; margin: 0 0 4% 0;}
+
+    nav {display: none;} /* hide regular nav */
+
+    .mobile-nav {
+        display: inline-block; 
+        padding: 10px 50px 0px 50px; 
+        transition: 0.6s;
+    }
+
+    .menu-open {
+        padding: 10px 50px 100vh 50px; 
+        background-color: rgb(255, 255, 255, 0.95); 
+        transition: 0.8s;}
+
+    .menu-open ul li {
+        display: block; 
+        padding: 15px; 
+        margin-left: 0px;
+        transition: border-bottom 0.2s;
+    }  
     
-    nav {padding: 10px 50px; transition: 0.6s;}
-    nav ul li {display: none;} /* hide menu bar */
-    
-    .mobile-nav-icon {display: inline-block; margin-right: 10px;}
+    .mobile-nav-icon {display: inline; padding-top: 14px;}
 
     .mobile-SW-name {
         font-family: 'Raleway', sans-serif;
-        display: table;
-        margin: 20px auto;
+        display: inline-block;
+        margin: 10px auto;
         font-size: 120%;
     } 
 
     .SW-name {display: none;}
     
-    .menu-open {
-        padding: 10px 50px 100% 50px; 
-        background-color: rgb(255, 255, 255, 0.95); 
-        transition: 0.6s;}
-    
-    .menu-open li {
-        display: block;
-        margin-right: 200px;
-    }
+    .menu-open li {display: block; margin-right: 200px;}
     
     .menu-open li a:link,
     .menu-open li a:visited {
-        display: block;
+        display: inline-block;
         border: 0;
         position: center;
         padding: 8px 0;
@@ -68,7 +78,7 @@
     .menu-open .mobile-SW-name {font-size: 120%; transition: 0.6s;}
     .sticky .mobile-nav-icon i {color: #555; padding: 0px;}
     
-    .long-copy {width: 100%; margin-left: 0%;  }
+    .long-copy {width: 100%; margin-left: 0%;}
     h1 {font-size: 180%;}
     h2 {font-size: 150%; margin-top: 5%;}
 }
@@ -76,7 +86,15 @@
 /* ABOUT Queries */
 @media only screen and (max-width: 905px) {
     .section-abt {height: 550px;}
-    .abt-showcase li img {margin-top: 150px;}
+    .abt-showcase li img {padding-top: 56%; min-width: 100%;}
+}
+
+@media only screen and (max-width: 760px) {.abt-showcase li img {padding-top: 70%;}
+
+@media only screen and (max-width: 425px) {
+    .mobile-nav-icon {font-size: 70%;}
+    .mobile-SW-name {font-size: 80%;}
+    .menu-open .mobile-SW-name {font-size: 80%;}
 }
 
 /* PIANO Queries */
@@ -99,7 +117,7 @@
 @media only screen and (min-width: 671px) {.wrapped-iframe {height: 315px; width: 560px;}}
 
 /* PHOTOS Queries */
-@media only screen and (max-height: 380px) {.photo-quote {display:none;}}
+@media only screen and (max-width: 750px) {.photos-showcase li {width: 100%; margin: 5px auto;}}
 
 /* FORM */
 @media only screen and (min-width: 320px) {
