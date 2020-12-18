@@ -198,6 +198,10 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/Piano-seated-edit.jpg);
 }
 
+.cs-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/codewall.jpg);
+}
+
 .photo-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/photo-background-min2.jpg);
 }
@@ -206,7 +210,7 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/contact-gradient.png);
 }
 
-.abt-bg, .piano-bg, .photo-bg, .contact-bg {background-size: cover;}
+.abt-bg, .piano-bg, .cs-bg, .photo-bg, .contact-bg {background-size: cover;}
 
 .photo-gen-box li {
     list-style: none;
@@ -458,9 +462,9 @@ footer p {color: #888; text-align: center; margin-top: 30px; }
 
 .social-icons {color:rgb(255, 255, 255); text-align: center;}
 .social-icons i {font-size: 120%; margin: 5px;}
-.social-icons .fa-youtube:hover {color: rgb(255, 0, 0); transition: 0.5s;}
-.social-icons .fa-github:hover {color: rgb(142, 5, 196); transition: 0.5s;}
-.social-icons .fa-instagram:hover {color: rgb(255, 255, 255); transition: 0.5s;}
+.fa-envelope:hover {color: rgb(234, 67, 53); transition: 0.5s;}
+.fa-github:hover {color: rgb(255, 255, 255); transition: 0.5s;}
+.fa-youtube:hover {color: rgb(229, 39, 45); transition: 0.5s;}
 
 /* ----------------------------- */
 /* ANIMATIONS */
