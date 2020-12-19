@@ -86,16 +86,44 @@
 /* ABOUT Queries */
 @media only screen and (max-width: 905px) {
     .section-abt {height: 550px;}
-    .abt-showcase li img {padding-top: 56%; min-width: 100%;}
+    .abt-showcase li img {padding-top: 60%;}
 }
 
-@media only screen and (max-width: 760px) {.abt-showcase li img {padding-top: 70%;}
+@media only screen and (max-width: 830px) {.abt-showcase li img {padding-top: 70%;}}
+@media only screen and (max-width: 750px) {.abt-showcase li img {padding-top: 80%;}}
+@media only screen and (max-width: 670px) {
+    .abt-showcase li img {padding-top: 90%;}
+    .abt-showcase li {width: 40%;} 
+    .abt-cap {font-size: 150%;}
+}
+
+@media only screen and (max-width: 590px) {
+    .abt-showcase li img {padding-top: 100%;}
+    .abt-showcase li {width: 45%;} 
+}
+
+@media only screen and (max-width: 510px) {
+    .abt-showcase li img {padding-top: 110%;}
+    .abt-showcase li {width: 50%;} 
+}
+
+@media only screen and (max-width: 430px) {
+    .abt-showcase li img {padding-top: 120%;}
+    .abt-showcase li {width: 55%;} 
+}
+
+@media only screen and (max-width: 350px) {
+    .abt-showcase li img {padding-top: 130%;}
+    .abt-showcase li {width: 60%;} 
+}
 
 @media only screen and (max-width: 425px) {
     .mobile-nav-icon {font-size: 70%;}
     .mobile-SW-name {font-size: 80%;}
     .menu-open .mobile-SW-name {font-size: 80%;}
 }
+
+@media only screen and (max-width: 385px) {.abt-cap {font-size: 125%;}}
 
 /* PIANO Queries */
 @media only screen and (min-width: 1060px) {.section-repertoire .repertoire-table td {font-size: 18px;}}

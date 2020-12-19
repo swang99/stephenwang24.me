@@ -308,7 +308,7 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 .abt-showcase {list-style: none;}
 .abt-showcase li {width: 40%; margin: 0 auto;}
 .abt-showcase li img {display: inline; padding-top: 30%;}
-.abt-photo img {max-width: 75%; height: auto;}
+.abt-img-container img {max-width: 75%; min-width: 135px; height: auto;}
 .abt-img-container, .abt-cap {text-align: center;}
 
 .section-bio {background-color: rgb(248, 245, 242);}
