@@ -5,8 +5,10 @@
 $('document').ready(function () {
     /* Sticky nav */
     window.addEventListener('scroll', function(){
-        var nav = document.querySelector('nav');
-        nav.classList.toggle('sticky', window.scrollY > 400)
+        var nav = $('nav');
+        for (i = 0; i < nav.length; i++) {
+            nav[i].classList.toggle('sticky', window.scrollY > 0);
+          }
     })
 
     /* Animations on scroll */
@@ -16,10 +18,6 @@ $('document').ready(function () {
     
     $('.js--wp-2').waypoint(function () {
         $('.js--wp-2').addClass('animated fadeInRight');
-    }, {offset: '50%'});
-    
-    $('.js--wp-3').waypoint(function () {
-        $('.js--wp-3').addClass('animated pulse');
     }, {offset: '50%'});
 });
 
