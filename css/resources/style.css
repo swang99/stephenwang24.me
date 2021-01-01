@@ -66,7 +66,7 @@ h3 {
 h4 {
     font-size: 220%;
     word-spacing: 2px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -212,10 +212,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(255, 255, 255, 0.95);
+    background-color:rgba(255, 255, 255, 0.75);
     transition: 0.6s;
     padding: 10px 50px;
-    box-shadow: 0 2px 2px #efefef;
     z-index: 100;
 }
 
@@ -396,8 +395,9 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 footer {background-color: #333; padding: 50px; font-size: 80%;}
 footer p {color: #888; text-align: center; margin-top: 30px; }
 
-.social-icons {color:rgb(255, 255, 255); text-align: center;}
+.social-icons {text-align: center;}
 .social-icons i {font-size: 120%; margin: 6px;}
+.fa-envelope, .fa-github, .fa-youtube {color: #1dd1a1;}
 .fa-envelope:hover {color: rgb(234, 67, 53); transition: 0.5s;}
 .fa-github:hover {color: rgb(255, 255, 255); transition: 0.5s;}
 .fa-youtube:hover {color: rgb(229, 39, 45); transition: 0.5s;}
