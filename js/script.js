@@ -28,11 +28,11 @@ $('.js--nav-icon').click(function () {
     if (icon.hasClass('ion-ios-menu')) {
         icon.addClass('ion-ios-close');
         icon.removeClass('ion-ios-menu');
-        nav.addClass('menu-open')
+        nav.addClass('menu-open');
     } else {
         icon.addClass('ion-ios-menu');
         icon.removeClass('ion-ios-close');
-        nav.removeClass('menu-open')
+        nav.removeClass('menu-open');
     }
 });
 

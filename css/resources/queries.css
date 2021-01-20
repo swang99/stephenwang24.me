@@ -1,5 +1,3 @@
-
-/* Big tablet and smaller computers: from 1024 to 1200 px */
 @media only screen and (max-width: 1200px) {
     .hero-text-box {
         width: 100%;
@@ -9,7 +7,6 @@
     .row {padding: 0 2%;}
 }
 
-/* Small tablet to big tablet: from 768 to (933) 1023 px */
 @media only screen and (max-width: 1023px) {
     body {font-size: 18px;}
     section {padding: 60px 0;}
@@ -22,8 +19,6 @@
     .icon-small {width: 17px; margin-right: 5px;}
     }
 
-
-/* Small phone to small tablet: from 481 to 767 px */
 @media only screen and (max-width: 905px) {
     body {font-size: 16px;}
     section {padding: 30px 0;}
@@ -52,19 +47,24 @@
         transition: border-bottom 0.2s;
     }  
     
-    .mobile-nav-icon {display: inline; padding-top: 14px;}
+    /* mobile nav icon */
+    .mobile-nav-icon {display: inline; padding-top: 12px;}
+    .sticky .mobile-nav-icon {font-size: 85%; padding-top: 6px; transition: 0.6s;}
 
+    /* hide original name */
+    .SW-name {display: none;}
+
+    /* displaying mobile name */
     .mobile-SW-name {
         font-family: 'Raleway', sans-serif;
         display: inline-block;
         margin: 10px auto;
         font-size: 120%;
     } 
+    .sticky .mobile-SW-name {margin: 1%; font-size: 80%; padding: 0%; transition: 0.6s;}
 
-    .SW-name {display: none;}
-    
+
     .menu-open li {display: block; margin-right: 200px;}
-    
     .menu-open li a:link,
     .menu-open li a:visited {
         display: inline-block;
@@ -74,7 +74,8 @@
         font-size: 100%;
     }
     
-    .sticky .mobile-nav-icon i {color: #555; padding: 0px;}
+    .sticky .mobile-nav-icon i {margin: 0%; color: #555; padding: 0px;}
+    
     
     .long-copy {width: 100%; margin-left: 0%;}
     h1 {font-size: 180%;}
@@ -126,7 +127,8 @@
 @media only screen and (min-width: 1060px) {.section-repertoire .repertoire-table td {font-size: 18px;}}
 @media only screen and (min-width: 400px) {.section-repertoire .repertoire-table td {font-size: 16px;}}
 @media only screen and (min-width: 300px) {.section-repertoire .repertoire-table td {font-size: 14px;}}
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 475px),
+    only screen and (min-width: 1125px) {
     .piano-bg {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/piano-close-view2.jpg);
         background-size: cover;
