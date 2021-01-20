@@ -83,8 +83,8 @@ h4:after {
     margin-top: 30px;
 }
 
-iframe {display: block; margin: 0 auto; border: 0;}
 
+iframe {display: block; margin: 0 auto; border: 0; width: 533; height: 300;}
 
 /* --- PARAGRAPHS --- */
 .long-copy {
@@ -327,41 +327,7 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 .section-piano-vids p {text-align: center;}
 .section-repertoire {background-color: rgba(205, 202, 198, 0.59);}
 
-.section-repertoire .repertoire-table {
-    width: 50%;
-    text-align: left;
-    margin: 0 auto;
-}
-
-.section-repertoire .repertoire-table th {
-    height: 50px;
-    color: #555;
-    border: 0px solid transparent;
-}
-
-.section-repertoire .ratings-table {
-    width: 95%;
-    text-align: center;
-    margin-left: 2.5%;
-}
-
-.section-repertoire .ratings-table th {
-    max-width: 50px;
-    height: 50px;
-    background-color: #1dd1a1;
-    color: rgb(87, 79, 79);
-    border: 1px solid #8e8e8e;
-}
-
-.section-repertoire .ratings-table td {
-    max-width: 30px;
-    height: 50px;
-    border: 1px solid #8e8e8e;
-}
-
-.section-repertoire .ratings-table th {background-color: rgb(237, 232, 208);}
-
-.section-repertoire .ratings-table td {background-color: rgba(253, 251, 241, 0.52); padding: 0 10px;}
+.repertoire-list {display: block; text-align: center;}
 
 /* ----------------------------- */
 /* PHOTOS */
