@@ -83,9 +83,6 @@ h4:after {
     margin-top: 30px;
 }
 
-
-iframe {display: block; margin: 0 auto; border: 0; width: 533; height: 300;}
-
 /* --- PARAGRAPHS --- */
 .long-copy {
     line-height: 145%;
@@ -100,14 +97,14 @@ iframe {display: block; margin: 0 auto; border: 0; width: 533; height: 300;}
 /* --- LINKS --- */
 
 a:link, a:visited {
-    color: #1dd1a1;
+    color: #484848;
     text-decoration: none;
     padding-bottom: 1px;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
 a:hover, a:active {
-    color: #484848;
+    color: #888;
     border-bottom: 0px solid transparent;
 }
 
@@ -327,7 +324,7 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 .section-piano-vids p {text-align: center;}
 .section-repertoire {background-color: rgba(205, 202, 198, 0.59);}
 
-.repertoire-list {display: block; text-align: center;}
+.repertoire-list {display: block; text-align: center; color:rgba(0, 0, 0, 0.5);}
 
 /* ----------------------------- */
 /* PHOTOS */

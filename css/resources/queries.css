@@ -134,8 +134,6 @@
         background-size: cover;
 }
 
-/* Responsive Youtube iframe */
-@media only screen and (min-width: 600px) {.wrapped-iframe {height: 250px; width: 444px;}}
 
 /* PHOTOS Queries */
 @media only screen and (max-width: 750px) {.photos-showcase li {width: 100%; margin: 5px auto;}}
