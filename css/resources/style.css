@@ -326,18 +326,31 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 
 .repertoire-list {display: block; text-align: center; color:rgba(0, 0, 0, 0.5);}
 
+
+/* ----------------------------- */
+/* CS */
+/* ----------------------------- */
+
+.python, .htmlcss, .java {text-align: left; margin-bottom: 20px;}
+.python-logo, .htmlcss-logo, .java-logo {max-width: 30%;  height: auto;}
+
+.section-tools {background-color:rgb(245, 248, 253);}
+.my-tool img {width: 40%; height: auto;}
+.tools-showcase li {width: 25%; margin: 12px auto;}
+
 /* ----------------------------- */
 /* PHOTOS */
 /* ----------------------------- */
 
-.photos-showcase {
+.photos-showcase, .tools-showcase, .exp-showcase {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
 .photos-showcase li {width: 48.5%; margin: 5px auto;}
-.photos-showcase li a, .abt-showcase li a {
+.photos-showcase li a, .abt-showcase li a, 
+.tools-showcase li a, .exp-showcase li a {
     border: none; 
     width: 100%;
     margin: 0 auto;
@@ -348,7 +361,7 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 
 .section-fall {background-color: rgb(255, 250, 242);}
 
-.my-photo:hover {opacity: 0.75; text-decoration: none;}
+.my-photo:hover, .my-tool:hover {opacity: 0.75; text-decoration: none;}
 .my-photo img {width: 100%; height: auto;}
 
 /* ----------------------------- */
