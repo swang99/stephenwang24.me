@@ -132,8 +132,13 @@
     .piano-bg {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/piano-close-view2.jpg);
         background-size: cover;
-}
+}}
 
+/* iframe query */
+@media only screen and (max-width: 600px) {iframe {height: 200px;}}
+@media only screen and (min-width: 601px) {iframe {height: 300px; width: 533px;}}
 
 /* PHOTOS Queries */
-@media only screen and (max-width: 750px) {.photos-showcase li {width: 100%; margin: 5px auto;}}
+@media only screen and (max-width: 750px) {
+    .photos-showcase li {width: 100%; margin: 5px auto;}
+}
