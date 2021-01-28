@@ -332,7 +332,27 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 /* ----------------------------- */
 
 .python, .htmlcss, .java {text-align: left; margin-bottom: 20px;}
-.python-logo, .htmlcss-logo, .java-logo {max-width: 30%;  height: auto;}
+
+.collapse {
+    cursor: pointer;
+    margin-top: 22px;
+    padding: 16px;
+    width: 100%;
+    border: none;
+}
+
+.exp-content {
+    line-height: 145%;
+    width: 100%;
+    margin-left: 2%; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.python {background-color:rgb(255, 250, 210);}
+.htmlcss {background-color:rgb(255, 243, 227);}
+.java {background-color:rgb(231, 250, 255);}
 
 .section-tools {background-color:rgb(245, 248, 253);}
 .my-tool img {width: 40%; height: auto;}
