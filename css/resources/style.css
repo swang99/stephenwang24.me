@@ -355,7 +355,8 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 .java {background-color:rgb(231, 250, 255);}
 
 .section-tools {background-color:rgb(245, 248, 253);}
-.my-tool img {width: 40%; height: auto;}
+.my-tool img {width: 33%; height: auto; align-items: center;}
+.tools-showcase {text-align: center;}
 .tools-showcase li {width: 25%; margin: 12px auto;}
 
 /* ----------------------------- */
