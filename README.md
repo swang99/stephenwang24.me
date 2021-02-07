@@ -1,2 +1,2 @@
-# swang99.github.io
-My personal website
+# stephenwang24.me
+My personal portfolio of piano, photography, and CS.
