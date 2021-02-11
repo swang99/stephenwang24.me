@@ -8,7 +8,7 @@ $('document').ready(function () {
         var nav = $('nav');
         for (i = 0; i < nav.length; i++) {
             nav[i].classList.toggle('sticky', window.scrollY > 0);
-          }
+        }
     })
 
     /* Animations on scroll */
@@ -25,14 +25,17 @@ $('document').ready(function () {
 $('.js--nav-icon').click(function () {
     var nav = $('.mobile-nav');
     var icon = $('.js--nav-icon i');
+    var name = $('SW-name');
     if (icon.hasClass('ion-ios-menu')) {
         icon.addClass('ion-ios-close');
         icon.removeClass('ion-ios-menu');
         nav.addClass('menu-open');
+        name.addClass('menu-open');
     } else {
         icon.addClass('ion-ios-menu');
         icon.removeClass('ion-ios-close');
         nav.removeClass('menu-open');
+        name.removeClass('menu-open');
     }
 });
 
