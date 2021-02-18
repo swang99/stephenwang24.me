@@ -104,7 +104,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    color: #888;
+    color: #777;
     border-bottom: 0px solid transparent;
 }
 
@@ -393,7 +393,8 @@ footer {background-color: #333; padding: 50px; font-size: 80%;}
 footer p {color: #888; text-align: center; margin-top: 30px; }
 
 .social-icons {text-align: center;}
-.social-icons i {font-size: 120%; margin: 6px; color: #1dd1a1;}
+.social-icons i {font-size: 120%; margin: 6px;}
+.fas, .fab {color:#1dd1a1;}
 .fa-envelope:hover {color: rgb(234, 67, 53); transition: 0.5s;}
 .fa-github:hover {color: rgb(255, 255, 255); transition: 0.5s;}
 .fa-youtube:hover {color: rgb(229, 39, 45); transition: 0.5s;}
