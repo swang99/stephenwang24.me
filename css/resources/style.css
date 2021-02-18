@@ -295,26 +295,6 @@ nav li a:visited.current {border-bottom: 2px solid #1dd1a1;}
 /* PIANO */
 /* ----------------------------- */
 
-.piano-text-box {
-    font-size: 55%;
-    margin-top: 31%;
-    margin-left: 10%;
-    margin-right: 20%;
-    text-align: left;
-}
-
-.piano-quote, .photo-quote {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #ffffff;
-    font-size: 240%;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-}
-
-.piano-quote:first-letter,
-.photo-quote:first-letter {text-transform: uppercase;}
-
 .section-piano-vids {
     background: linear-gradient(rgba(219, 219, 219, 0.9), rgba(219, 219, 219, 0.9)), url(../img/music-background.jpg) no-repeat;
     z-index: 0;
